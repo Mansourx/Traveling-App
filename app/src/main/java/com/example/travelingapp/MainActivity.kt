@@ -1,5 +1,6 @@
 package com.example.travelingapp
 
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -20,12 +21,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-             WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        removeStatusBar()
         setContentView(R.layout.activity_main)
 
         initializeSplashScreen()
         startDashBoard()
+    }
+
+    private fun removeStatusBar() {
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
     }
 
     private fun initializeSplashScreen() {
@@ -40,14 +45,23 @@ class MainActivity : AppCompatActivity() {
 
     private fun startDashBoard() {
         Handler().postDelayed({
-            val intent: Intent = Intent(this, DashBoardActivity::class.java)
-            startActivity(intent)
+            val intent: Intent = Intent(this, LoginActivity::class.java)
+
+            val image: View = splash_logo
+            val animName = "splash_logo_trans"
+
+            val pair1 = android.util.Pair(image, animName)
+            //val pair2 = Pair (splash_title, "splash_title_trans") // using declared variable in Pair class
+
+            val options: ActivityOptions? = ActivityOptions.makeSceneTransitionAnimation(this, pair1)
+            startActivity(intent, options?.toBundle())
             finish()
         }, SPLASH_SCREEN.toLong())
+
     }
 
     companion object {
-        const val SPLASH_SCREEN = 5000
+        const val SPLASH_SCREEN = 3000
     }
 
 }
