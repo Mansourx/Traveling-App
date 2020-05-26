@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#fece1f">
+    android:background="#fece1f"
+    tools:context=".MainActivity">
 
 
     <ImageView
@@ -16,8 +16,8 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="269dp"
-        android:transitionName="splash_logo_trans"
         android:src="@drawable/rent_car_logo_gray"
+        android:transitionName="splash_logo_trans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,11 +30,11 @@
         android:layout_marginTop="14dp"
         android:fontFamily="@font/bungee"
         android:text="Mano's Rent"
-        android:transitionName="splash_title_trans"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="50sp"
         android:textStyle="bold"
+        android:transitionName="splash_title_trans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/splash_logo" />

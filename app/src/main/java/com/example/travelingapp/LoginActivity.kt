@@ -1,12 +1,11 @@
 package com.example.travelingapp
 
+import android.app.ActivityOptions
 import android.content.Intent
-import android.net.UrlQuerySanitizer
-import android.net.UrlQuerySanitizer.ParameterValuePair
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -19,14 +18,23 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun removeStatusBar() {
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-        WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
     }
 
     private fun initialize() {
         sign_up_btn.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
+            val image: View = login_logo
+            val animName = "splash_logo_trans"
+
+            val pair = android.util.Pair(image, animName)
+
+            val options: ActivityOptions? = ActivityOptions
+                .makeSceneTransitionAnimation(this, pair)
+            startActivity(intent, options?.toBundle())
         }
     }
 

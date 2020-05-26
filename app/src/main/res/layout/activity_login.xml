@@ -4,35 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:orientation="vertical"
     android:background="#fff"
-    android:padding="20dp">
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/login_logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="start"
-        android:src="@drawable/rent_car_logo_gray" />
+        android:src="@drawable/rent_car_logo_gray"
+        android:transitionName="splash_logo_trans" />
 
     <TextView
         android:id="@+id/login_logo_txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
         android:includeFontPadding="false"
         android:text="Hello There, Welcome Back"
-        android:textSize="40sp"
         android:textColor="#000000"
-        android:fontFamily="@font/bungee"/>
+        android:textSize="40sp"
+        android:transitionName="splash_title_trans" />
 
     <TextView
         android:id="@+id/slogin_logo_txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign In to continue"
-        android:textSize="18sp"
-        />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,37 +43,37 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_et"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username_et"
-            android:hint="Username"
             android:layout_marginBottom="15dp"
-            android:imeOptions="actionNext"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:hint="Username"
+            android:imeOptions="actionNext">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
+                android:imeOptions="actionNext"
                 android:inputType="textPersonName"
-                android:imeOptions="actionNext"/>
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_et"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password_et"
             android:hint="Password"
-            app:passwordToggleEnabled="true"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
+                android:imeOptions="actionNext"
                 android:inputType="textPassword"
-                android:imeOptions="actionNext" />
+                android:maxLines="1" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,32 +84,32 @@
             android:layout_gravity="end"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
+            android:backgroundTint="#00000000"
             android:padding="2dp"
             android:text="Forget Password?"
-            android:backgroundTint="#00000000"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bungee"
+            android:padding="2dp"
             android:text="Go"
             android:textSize="18sp"
-            android:fontFamily="@font/bungee"
-            android:textStyle="bold"
-            android:padding="2dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/sign_up_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New User? SIGN UP"
-            android:textSize="14sp"
+            android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:padding="2dp"
-            android:layout_gravity="center"/>
+            android:text="New User? SIGN UP"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
