@@ -29,13 +29,17 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, SignUpActivity::class.java)
             val image: View = login_logo
             val animName = "splash_logo_trans"
-
             val pair = android.util.Pair(image, animName)
 
             val options: ActivityOptions? = ActivityOptions
                 .makeSceneTransitionAnimation(this, pair)
             startActivity(intent, options?.toBundle())
         }
+    }
+
+    fun startMyProfile(view: View) {
+        val intent = Intent(this, ProfileActivity::class.java)
+        startActivity(intent)
     }
 
 }
