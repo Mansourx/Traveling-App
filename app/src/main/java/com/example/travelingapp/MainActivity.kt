@@ -47,17 +47,17 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed({
             val intent: Intent = Intent(this, LoginActivity::class.java)
 
-            val image: View = splash_logo
-            val animName = "splash_logo_trans"
-
-            val pair1 = android.util.Pair(image, animName)
-            //val pair2 = Pair (splash_title, "splash_title_trans") // using declared variable in Pair class
-
-            val options: ActivityOptions? = ActivityOptions.makeSceneTransitionAnimation(this, pair1)
-            startActivity(intent, options?.toBundle())
+//            val image: View = splash_logo
+//            val animName = "splash_logo_trans"
+//
+//            val pair1 = android.util.Pair(image, animName)
+//            //val pair2 = Pair (splash_title, "splash_title_trans") // using declared variable in Pair class
+//
+//            val options: ActivityOptions? = ActivityOptions.makeSceneTransitionAnimation(this, pair1)
+//            startActivity(intent, options?.toBundle())
+            startActivity(intent)
             finish()
         }, SPLASH_SCREEN.toLong())
-
     }
 
     companion object {
