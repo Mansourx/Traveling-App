@@ -53,8 +53,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_toRightOf="@id/profile_img"
                     android:text="AhmadMansour"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
             </RelativeLayout>
 
@@ -176,8 +176,8 @@
                         android:layout_marginBottom="10dp"
                         android:drawableLeft="@drawable/ic_action_user"
                         android:drawablePadding="10dp"
-                        android:text="Ahmad Mansour"
                         android:inputType="textPersonName"
+                        android:text="Ahmad Mansour"
                         android:textSize="13sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -222,8 +222,8 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:passwordToggleEnabled="true"
-                    android:hint="Password">
+                    android:hint="Password"
+                    app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"

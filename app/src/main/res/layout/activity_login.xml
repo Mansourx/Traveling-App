@@ -95,9 +95,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/bungee"
+            android:onClick="startMyProfile"
             android:padding="2dp"
             android:text="Go"
-            android:onClick="startMyProfile"
             android:textSize="18sp"
             android:textStyle="bold" />
 
