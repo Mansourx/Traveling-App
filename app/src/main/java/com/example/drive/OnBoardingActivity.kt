@@ -1,4 +1,4 @@
-package com.example.travelingapp
+package com.example.drive
 
 import android.content.Intent
 import android.graphics.Color
@@ -9,7 +9,7 @@ import android.view.View.VISIBLE
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
-import com.example.travelingapp.adapters.OnBoardingSliderAdapter
+import com.example.drive.adapters.OnBoardingSliderAdapter
 import kotlinx.android.synthetic.main.activity_on_boarding.*
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.travelingapp">
+    package="com.example.drive">
 
     <application
         android:allowBackup="true"
@@ -9,12 +9,12 @@
         android:roundIcon="@drawable/rent_car_logo_gray"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OnBoardingActivity"></activity>
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".DashBoardActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.drive.OnBoardingActivity"></activity>
+        <activity android:name="com.example.drive.ProfileActivity" />
+        <activity android:name="com.example.drive.SignUpActivity" />
+        <activity android:name="com.example.drive.LoginActivity" />
+        <activity android:name="com.example.drive.DashBoardActivity" />
+        <activity android:name="com.example.drive.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

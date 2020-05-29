@@ -1,4 +1,4 @@
-package com.example.travelingapp
+package com.example.drive
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.example.travelingapp
+package com.example.drive
 
 import android.app.ActivityOptions
 import android.content.Intent

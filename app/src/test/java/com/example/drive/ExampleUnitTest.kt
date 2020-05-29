@@ -1,4 +1,4 @@
-package com.example.travelingapp
+package com.example.drive
 
 import org.junit.Test
 

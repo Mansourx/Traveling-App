@@ -1,4 +1,4 @@
-package com.example.travelingapp.adapters
+package com.example.drive.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
-import com.example.travelingapp.R
+import com.example.drive.R
 import kotlinx.android.synthetic.main.on_boarding_slide_layout.view.*
 
 

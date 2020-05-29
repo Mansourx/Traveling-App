@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "72262507255",
+    "firebase_url": "https://drive-50ef0.firebaseio.com",
+    "project_id": "drive-50ef0",
+    "storage_bucket": "drive-50ef0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72262507255:android:bc5838ca6c665a51a211f2",
+        "android_client_info": {
+          "package_name": "com.example.drive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72262507255-2i88ee7rrbk040a2l6v2vsmhpo59v6ap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drive",
+            "certificate_hash": "d4aa4af84e6e9e963daf54350b5817cb670b7d10"
+          }
+        },
+        {
+          "client_id": "72262507255-a0ogkvtkh1m8tbfvhm3en9j68am9s6ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIpcLQ3517l3S88NulCtQEFUj9UD8eIiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72262507255-a0ogkvtkh1m8tbfvhm3en9j68am9s6ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
